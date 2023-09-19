@@ -4,7 +4,7 @@ function checkDifference(int $int1, int $int2) : int {
     $sum = $int1 + $int2;
     $difference = $int1 - $int2;
 
-    return ($num1 === 15 || $num2 === 15 || $sum === 15 || $difference === 15);
+    return ($int1 === 15 || $int2 === 15 || $sum === 15 || $difference === 15);
 }
 
 $num1 = 10;
