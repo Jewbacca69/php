@@ -28,7 +28,7 @@ $weapons = [
     new Gun('Gun1', 1200, 'A'),
     new Gun('Gun2', 1100, 'A'),
     new Gun('Gun3', 1200, 'B'),
-    new Gun('Gun4', 1100, 'C'),
+    new Gun('Gun4', 1100, 'C')
 ];
 
 $person = new stdClass();
