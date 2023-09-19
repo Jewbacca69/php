@@ -27,9 +27,9 @@ class Gun {
 function canBuy(stdClass $person, Gun $weapon): bool {
     $personLicenses = $person->licenses;
     $personMoney = $person->money;
-    $neededLicense = $weapon->getLicense();
+    $license = $weapon->getLicense();
 
-    $isPermitted = in_array($neededLicense, $personLicenses);
+    $isPermitted = in_array($license, $personLicenses);
     $hasMoney = $personMoney > $weapon->getPrice();
 
     return $isPermitted && $hasMoney;
