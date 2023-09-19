@@ -24,6 +24,17 @@ class Gun {
     }
 }
 
+function canBuy(stdClass $person, Gun $weapon): bool {
+    $personLicenses = $person->licenses;
+    $personMoney = $person->money;
+    $neededLicense = $weapon->getLicense();
+
+    $isPermitted = in_array($neededLicense, $personLicenses);
+    $hasMoney = $personMoney > $weapon->getPrice();
+
+    return $isPermitted && $hasMoney;
+}
+
 $weapons = [
     new Gun('Gun1', 1200, 'A'),
     new Gun('Gun2', 1100, 'A'),
@@ -34,22 +45,11 @@ $weapons = [
 $person = new stdClass();
 $person->name = 'John';
 $person->money = 2000;
-$person->licenses = ['C', 'D'];
+$person->licenses = ['C', 'A'];
 
 foreach($weapons as $weapon) {
     $canBuy = canBuy($person, $weapon);
     if ($canBuy) {
         echo 'You can buy : ' . $weapon->getName() . PHP_EOL;
     }
-}
-
-function canBuy(stdClass $person, Gun $weapon): bool {
-    $personLicenses = $person->licenses;
-    $personMoney = $person->money;
-    $neededLicense = $weapon->getLicense();
-
-    $isPermitted = in_array($neededLicense, $personLicenses);
-    $hasMoney = $personMoney > $weapon->getPrice();
-
-    return $isPermitted && $hasMoney;
 }
