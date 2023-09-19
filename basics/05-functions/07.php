@@ -43,7 +43,7 @@ foreach($weapons as $weapon) {
     }
 }
 
-function canBuy(stdClass $person, Weapon $weapon): bool {
+function canBuy(stdClass $person, Gun $weapon): bool {
     $personLicenses = $person->licenses;
     $personMoney = $person->money;
     $neededLicense = $weapon->getLicense();
