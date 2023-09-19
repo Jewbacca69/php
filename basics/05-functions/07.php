@@ -31,7 +31,7 @@ $weapons = [
 
 $person = new stdClass();
 $person->name = 'John';
-$person->money = 8613;
+$person->money = 2000;
 $person->licenses = ['c', 'd'];
 
 foreach($weapons as $weapon) {
