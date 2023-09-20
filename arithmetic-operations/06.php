@@ -1,5 +1,9 @@
 <?php
-for ($i = 1; $i <= 110; $i++) {
+
+$min = 1;
+$max = 110;
+
+for ($i = $min; $i <= $max; $i++) {
     
     $output = '';
 
