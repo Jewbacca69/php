@@ -1,5 +1,6 @@
 <?php
 for ($i = 1; $i <= 110; $i++) {
+    
     $output = '';
 
     switch (true) {
@@ -19,7 +20,7 @@ for ($i = 1; $i <= 110; $i++) {
             $output = $i;
             break;
     }
-
+    
     echo $output . ' ';
 
     if ($i % 11 === 0) {
