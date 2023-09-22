@@ -1,6 +1,6 @@
 <?php
 
-function calculate(float $param1, float $param2, string $shape): float {
+function calculate(float $param1 = 0, float $param2 = null, string $shape = ''): float {
     if ($param1 < 0 || $param2 < 0) {
         return -1;
     }
@@ -34,10 +34,6 @@ while (true) {
     if ($choice == 4) {
         exit();
     }
-
-    $shape = '';
-    $param1 = 0;
-    $param2 = 0;
 
     switch ($choice) {
         case 1:
