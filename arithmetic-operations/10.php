@@ -1,7 +1,7 @@
 <?php
 
-function calculate(float $param1 = 0, float $param2 = null, string $shape = ''): float {
-    if ($param1 <= 0 || $param2 <= 0) {
+function calculate(float $param1 = 0, ?float $param2 = null, string $shape = ''): float {
+    if ($param1 <= 0 || ($param2 !== null && $param2 <= 0)) {
         return -1;
     }
 
