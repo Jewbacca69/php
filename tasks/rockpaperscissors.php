@@ -8,6 +8,7 @@ $elements = [
     'insect' => ['rock', 'tree'],
     'tree' => ['water', 'rock'],
 ];
+
 function getWinner(string $userChoice, string $PcChoice, array $elements): string
 {
     if ($userChoice === $PcChoice) {
