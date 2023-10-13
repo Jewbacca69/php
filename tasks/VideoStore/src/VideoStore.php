@@ -3,6 +3,7 @@
 namespace rickandmorty;
 
 use Exception;
+
 class VideoStore
 {
     private string $api;
@@ -37,7 +38,7 @@ class VideoStore
         }
     }
 
-    private function loadRatings()
+    private function loadRatings() : void
     {
         $this->rating = file_exists('ratings.json') ? json_decode(file_get_contents('ratings.json'), true) : [];
     }
