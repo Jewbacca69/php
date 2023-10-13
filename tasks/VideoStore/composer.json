@@ -1,0 +1,16 @@
+{
+    "name": "jewbacca69/rickandmorty",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "rickandmorty\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jewbacca69",
+            "email": "vilnisgr1@outlook.com"
+        }
+    ],
+    "require": {}
+}
