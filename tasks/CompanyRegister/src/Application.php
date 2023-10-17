@@ -11,7 +11,7 @@ class Application
         $this->dataHandler = new DataHandler();
     }
 
-    public function run()
+    public function run() : void
     {
         echo "Company Register" . PHP_EOL;
         while (true) {
