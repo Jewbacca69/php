@@ -1,0 +1,15 @@
+{
+    "name": "vilnis/company-register",
+    "autoload": {
+        "psr-4": {
+            "CompanyRegister\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jewbacca69",
+            "email": "vilnisgrinbergs22@proton.me"
+        }
+    ],
+    "require": {}
+}
